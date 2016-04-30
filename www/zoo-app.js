@@ -3,7 +3,29 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('starter', ['ionic'])
+(function() {
+angular.module('zoo-app', ['ionic'])
+
+.config(function($stateProvider, $urlRouterProvider) {
+  $stateProvider.state('Home', { url: '/',
+    /*If in a folder, template/welcome.html*/
+    templateUrl: 'Partials/home.html',
+    controller: 'HomeController'
+  })
+
+  .state('LoadAnimal', { url: 'load-animal',
+    templateUrl: 'Partials/load-animal.html',
+    controller: 'LoadAnimalController'
+  })
+
+  .state('LoadAnimal.forChildren', {
+    url: 'load-animal/for-children',
+    templateUrl: 'Partials/For-Children.html',
+    controller: 'LoadAnimalController'
+  });
+
+  $urlRouterProvider.otherwise("/");
+})
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -21,4 +43,5 @@ angular.module('starter', ['ionic'])
       StatusBar.styleDefault();
     }
   });
-})
+});
+})();
