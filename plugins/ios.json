@@ -24,6 +24,9 @@
         },
         "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "com.ionicframework.zooapp266939"
+        },
+        "phonegap-plugin-barcodescanner": {
+            "PACKAGE_NAME": "com.ionicframework.zooapp266939"
         }
     },
     "dependent_plugins": {}
