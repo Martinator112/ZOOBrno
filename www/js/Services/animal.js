@@ -5,15 +5,18 @@
     var animalFactory = {};
     var url = "/";
 
-    if(ionic.Platform.isAndroid()){
+    if(ionic && ionic.Platform && ionic.Platform.isAndroid()){
       url = "/android_asset/www/";
     }
 
     function fetchAnimalById(id) {
       var deferred = $q.defer();
-
-      $http.get(url + "data/animal-texts/" + id +".json").then(function(animalData){
+      var animalUrl = url + "data/animal-texts/" + id +".json";
+      alert("Getting animalUrl: '" + animalUrl + "'");
+      $http.get(animalUrl).then(function(animalData){
         deferred.resolve(animalData.data);
+      }, function(failed){
+        deferred.reject(failed);
       });
 
       return deferred.promise;

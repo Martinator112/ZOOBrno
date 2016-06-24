@@ -1,10 +1,9 @@
-<ion-view title="For Adults">
+<ion-view title="{{animal.label}}">
 
   <ion-content>
     <div class="card padding">
-      For adults...
-      <p class="animal-text">
-        {{animal.forAdults}}
+      <p class="animal-text" id="paragraphForAdults">
+        {{getTextForAdults()}}
       </p>
     </div>
   </ion-content>

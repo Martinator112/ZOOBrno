@@ -1,4 +1,4 @@
-<ion-side-menus>
+<ion-side-menus  ng-controller="AnimalController">
 
   <ion-side-menu-content enable-menu-with-back-views="false">
     <ion-nav-bar>
@@ -19,28 +19,27 @@
   <!-- Left menu -->
   <ion-side-menu side="left" is-enabled="true">
 
-    <ion-header-bar>
-      Actions for {{animal.label}}
+    <ion-header-bar id="animalLeftSideMenu">
+      {{translate("ACTIONS_FOR")}} {{animal.label}}
     </ion-header-bar>
 
     <ion-content has-header="true">
       <ion-list>
+        <ion-item class="clickable" ui-sref="Animal.Home" menu-close>
+          <i class="icon ion-ios-body"></i>
+          {{translate("HOME")}}
+        </ion-item>
         <ion-item class="clickable" ui-sref="Animal.forChildren" menu-close>
           <i class="icon ion-ios-body"></i>
-          For Children
+          {{translate("FOR_CHILDREN")}}
         </ion-item>
         <ion-item class="clickable" ui-sref="Animal.forAdults" menu-close>
           <i class="icon ion-man"></i>
-          For Adults
+          {{translate("FOR_ADULTS")}}
         </ion-item>
-        <ion-item class="clickable" ui-sref="Animal.forAdults" menu-close>
-          <i class="icon ion-volume-medium"></i>
-          Audio
-        </ion-item>
-
         <ion-item class="clickable" ui-sref="Animal.map" menu-close>
           <i class="icon ion-man"></i>
-          Map
+          {{translate("MAP")}}
         </ion-item>
       </ion-list>
     </ion-content>

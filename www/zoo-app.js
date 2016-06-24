@@ -14,10 +14,16 @@ angular.module('zoo-app', ['ionic', 'ngCordova'])
     controller: 'HomeController'
   })
 
+  .state('News', {
+    url: '/news',
+    templateUrl: 'Partials/news.html',
+    controller: 'HomeController'
+  })
+
   .state('Animal', {
-    url: '/animal/{animalId}',
+    url: '/animal/{animalId}/{lang}',
     abstract:true,
-    templateUrl: 'Partials/animal.html',
+    templateUrl: 'Partials/animal.html'
   })
 
   .state('Animal.Home', {
@@ -25,7 +31,6 @@ angular.module('zoo-app', ['ionic', 'ngCordova'])
     views: {
       "menuContent": {
         templateUrl: 'Partials/animal-home.html',
-        controller: 'AnimalController'
       }
     }
   })
@@ -35,7 +40,6 @@ angular.module('zoo-app', ['ionic', 'ngCordova'])
     views: {
       "menuContent": {
         templateUrl: 'Partials/for-children.html',
-        controller: 'AnimalController'
       }
     }
   })
@@ -45,7 +49,6 @@ angular.module('zoo-app', ['ionic', 'ngCordova'])
     views: {
       "menuContent": {
         templateUrl: 'Partials/for-adults.html',
-        controller: 'AnimalController'
       }
     }
   })
@@ -58,12 +61,6 @@ angular.module('zoo-app', ['ionic', 'ngCordova'])
         controller: 'AnimalMapController'
       }
     }
-  })
-
-  .state('LoadAnimal', {
-    url: 'loadAnimal',
-    templateUrl: 'Partials/load-animal.html',
-    controller: 'BarcodeScannerController'
   });
 
   $urlRouterProvider.otherwise("/");
