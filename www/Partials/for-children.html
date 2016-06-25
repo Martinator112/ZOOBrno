@@ -1,104 +1,26 @@
-	<ion-view title="{{animal.label}}">
+<ion-view title="{{animal.label}}">
 
-	<ion-content>
-	<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title></title>
-		<meta name="keywords" content="" />
-		<meta name="description" content="" />
-		<link href="http://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet" />
-		<link href="default.css" rel="stylesheet" type="text/css" media="all" />
-		<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+<ion-content>
+<div class="list card">
 
-		<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+	<div class="item item-icon-left positive" href="#">
+    	<i class="icon ion-ios-body"></i> 
+    	Pro deti
+  	</div>
 
-	</head>
-
-	<body>   
-	<!--<div class="card padding">
-	    <p class="animal-text" id="paragraphForChildren">
-	      {{getTextForChildren()}}
-	    </p>
-	</div> -->
-	<div id="header-wrapper">
-		<div id="header" class="container">
-			<div id="logo">
-				<!-- <h1><a href="#">ZOO Brno</a></h1> -->
-			</div>
-			<!--
-			<div id="menu">
-				<ul>
-					<li class="active"><a href="#" accesskey="1" title="">Homepage</a></li>
-					<li><a href="#" accesskey="2" title="">Our Clients</a></li>
-					<li><a href="#" accesskey="3" title="">About Us</a></li>
-					<li><a href="#" accesskey="4" title="">Careers</a></li>
-					<li><a href="#" accesskey="5" title="">Contact Us</a></li>
-				</ul>
-			</div> -->
-		</div>
-		<div id="banner" class="container">
-			<div class="title">
-				<h2>ZOO BRNO</h2>
-				<span class="byline">QR</span>
-			</div>
-			<!--
-			<ul class="actions">
-				<li><a href="#" class="button">Etiam posuere</a></li>
-				<li><a href="#" class="button">Pulvinar mollis</a></li>
-			</ul> -->
-		</div>
+	<div class="item item-avatar">
+		<img src="css/images/{{animalId}}.jpg">
+		<h2>{{animal.label}}</h2>
+		<p>ZOO Brno</p>
 	</div>
-	<div id="wrapper">
-		<div id="three-column" class="container">
-			<div class="banner">
-				<!--<img src="css/images/bobr_kanadsky.jpg" alt="" /> -->
-				<img src="css/images/{{animalId}}.jpg" alt="" />
-			</div>
-			<div class="animal">
-				<h2>{{animal.label}}</h2>
-				<span class="description">
-					<p class="animal-text" id="paragraphForChildren">{{getTextForChildren()}}</p>
-				</span>
-			</div>
-			<div class="boxA">
-				<!--
-				<p>Phasellus pellentesque, ante nec iaculis dapibus, eros justo auctor lectus, a lobortis lorem mauris quis nunc. Praesent pellentesque facilisis elit. Class aptent taciti sociosqu ad  torquent per conubia nostra.</p>
-				<a href="#" class="button button-alt">More Info</a> -->
-				<img src="css/images/{{animalId}}1.jpg" width = "380" height="380" />
-			</div>
-			<div class="boxB">
-				<!--
-				<p>Etiam neque. Vivamus consequat lorem at nisl. Nullam  wisi a sem semper eleifend. Donec mattis. Phasellus pellentesque, ante nec iaculis dapibus, eros justo auctor lectus, a lobortis lorem mauris quis nunc.</p>
-				<a href="#" class="button button-alt">More Info</a> -->
-				<img src="css/images/{{animalId}}2.jpg" width = "380" height="380" />
-			</div>
-			<div class="boxC">
-				<!--
-				<p> Aenean lectus lorem, imperdiet at, ultrices eget, ornare et, wisi. Pellentesque adipiscing purus. Phasellus pellentesque, ante nec iaculis dapibus, eros justo auctor lectus, a lobortis lorem mauris quis nunc.</p>
-				<a href="#" class="button button-alt">More Info</a> -->
-				<img src="css/images/{{animalId}}3.jpg" width = "380" height="380" />
-			</div>
-		</div>
+
+	<div class="item item-body">
+		<img class="full-image" src="css/images/{{animalId}}0.jpg">
+		<p>{{getTextForChildren()}}</p>
+		<img class="full-image" src="css/images/{{animalId}}2.jpg">
+		<img class="full-image" src="css/images/{{animalId}}3.jpg">
 	</div>
-	<!--
-	<div id="welcome">
-		<div class="container">
-			<div class="title">
-				<h2>Fusce ultrices fringilla metus</h2>
-				<span class="byline">Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue</span>
-			</div>
-			<p>This is <strong>Lorikeet</strong>, a free, fully standards-compliant CSS template designed by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>. The photos in this template are from <a href="http://fotogrph.com/"> Fotogrph</a>. This free template is released under the <a href="http://templated.co/license">Creative Commons Attribution</a> license, so you're pretty much free to do whatever you want with it (even use it commercially) provided you give us credit for it. Have fun :) </p>
-			<ul class="actions">
-				<li><a href="#" class="button">Etiam posuere</a></li>
-			</ul>
-		</div>
-	</div>-->
-	<div id="copyright" class="container">
-		<p>&copy; Michaela Balážová | Martin Galajda | Lenka Janečková | Jakub Mojto </p>
-	</div>
-</body>
-</html>
+</div>
 </ion-content>
 
 </ion-view>
