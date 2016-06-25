@@ -4,35 +4,65 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 (function() {
-angular.module('zoo-app', ['ionic'])
+angular.module('zoo-app', ['ionic', 'ngCordova'])
 
 .config(function($stateProvider, $urlRouterProvider) {
-  $stateProvider.state('Home', { url: '/',
+  $stateProvider.state('Home', {
+    url: '/',
     /*If in a folder, template/welcome.html*/
     templateUrl: 'Partials/home.html',
     controller: 'HomeController'
   })
 
-  .state('Animal', { url: 'animal',
-    templateUrl: 'Partials/animal.html',
-    controller: 'AnimalController'
+  .state('News', {
+    url: '/news',
+    templateUrl: 'Partials/news.html',
+    controller: 'HomeController'
   })
 
-  .state('LoadAnimal', {url: 'loadAnimal',
-    templateUrl: 'Partials/load-animal.html',
-    controller: 'BarcodeScannerController'
+  .state('Animal', {
+    url: '/animal/{animalId}/{lang}',
+    abstract:true,
+    templateUrl: 'Partials/animal.html'
+  })
+
+  .state('Animal.Home', {
+    url: '/home',
+    views: {
+      "menuContent": {
+        templateUrl: 'Partials/animal-home.html',
+      }
+    }
   })
 
   .state('Animal.forChildren', {
-    url: 'animal/for-children',
-    templateUrl: 'Partials/for-children.html',
-    controller: 'AnimalController'
+    url: '/for-children',
+    /*url: '/fchildren',*/
+    views: {
+      "menuContent": {
+        templateUrl: 'Partials/for-children.html',
+        /*templateUrl: 'Partials/fchildren.html',*/
+      }
+    }
   })
 
   .state('Animal.forAdults', {
-    url: 'animal/for-adults',
-    templateUrl: 'Partials/for-adults.html',
-    controller: 'AnimalController'
+    url: '/for-adults',
+    views: {
+      "menuContent": {
+        templateUrl: 'Partials/for-adults.html',
+      }
+    }
+  })
+
+  .state('Animal.map', {
+    url: '/map',
+    views: {
+      "menuContent": {
+        templateUrl: 'Partials/animal-map.html',
+        controller: 'AnimalMapController'
+      }
+    }
   });
 
   $urlRouterProvider.otherwise("/");

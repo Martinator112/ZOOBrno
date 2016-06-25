@@ -11,7 +11,16 @@ a {
 }
 
 #contentWrapper {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/lion-home.jpg");
+  background-position: center;
+}
 
+#contentWrapper div.list.card{
+  opacity: 0.9;
+  background-color: #666;
+  position: relative;
 }
 
 .scroll {
@@ -21,4 +30,44 @@ a {
 #googleMap{
   width: 100%;
   height: 100%;
+}
+
+#zooNewsHeader {
+  margin: 0px;
+  padding: 0px;
+}
+
+#zooNewsHeader button {
+  margin: 0px;
+  padding: 0px;
+}
+
+#homeHeader {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  opacity: 0.9;
+  background-color: #123;
+}
+
+#homeHeader .title{
+  color: white;
+}
+
+#homeFooter{
+  background-color: #123;
+  opacity: 0.9;
+}
+
+#homeFooter .buttons .button {
+  background-color: #777;
+}
+
+#paragraphForAdults {
+  white-space: pre-line;
+  /*background-image: url("../img/lion-home.jpg");*/
+}
+
+#paragraphForChildren {
+	white-space: pre-line;
 }
