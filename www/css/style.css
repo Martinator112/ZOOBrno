@@ -65,8 +65,9 @@ a {
 
 #paragraphForAdults {
   white-space: pre-line;
+  /*background-image: url("../img/lion-home.jpg");*/
 }
 
 #paragraphForChildren {
-  white-space: pre-line;
+	white-space: pre-line;
 }
