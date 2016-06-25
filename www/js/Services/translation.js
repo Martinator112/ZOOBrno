@@ -31,7 +31,7 @@
         "AUDIO": "Audi",
         "ACTIONS_FOR": "Actions for",
         "RATE": "Rate me",
-        "HOME": "Homee"
+        "HOME": "Home"
       }
     };
 
