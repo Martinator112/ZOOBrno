@@ -1,0 +1,34 @@
+<div class="rating" ng-if="readOnly">
+
+    <label for="r1" ng-class="{active: animalRating >= 1, big: big, small: small}"></label>
+    <input type="radio" name="rating" id="r1" disabled>
+
+    <label for="r2" ng-class="{active: animalRating >= 2, big: big, small: small}"></label>
+    <input type="radio" name="rating" id="r2" disabled>
+
+    <label for="r3" ng-class="{active: animalRating >= 3, big: big, small: small}"></label>
+    <input type="radio" name="rating" id="r3" disabled>
+
+    <label for="r4" ng-class="{active: animalRating >= 4, big: big, small: small}"></label>
+    <input type="radio" name="rating" id="r4" disabled>
+
+    <label for="r5" ng-class="{active: animalRating >= 5, big: big, small: small}"></label>
+    <input type="radio" name="rating" id="r5" disabled>
+</div>
+<div class="rating" ng-if="!readOnly">
+  <label for="rr1" ng-class="{active: animalRating >= 1, big: big, small: small}"></label>
+  <input type="radio" ng-click="rateAnimal(1)" name="ratingReadOnly"  id="rr1">
+
+  <label for="rr2"  ng-class="{active: animalRating >= 2, big: big, small: small}"></label>
+  <input type="radio" ng-click="rateAnimal(2)" name="ratingReadOnly"  id="rr2">
+
+  <label for="rr3"  ng-class="{active: animalRating >= 3, big: big, small: small}"></label>
+  <input type="radio" ng-click="rateAnimal(3)" name="ratingReadOnly"  id="rr3">
+
+  <label for="rr4"  ng-class="{active: animalRating >= 4, big: big, small: small}"></label>
+  <input type="radio" ng-click="rateAnimal(4)" name="ratingReadOnly"  id="rr4">
+
+  <label for="rr5"  ng-class="{active: animalRating >= 5, big: big, small: small}"></label>
+  <input type="radio" ng-click="rateAnimal(5)" name="ratingReadOnly"  id="rr5">
+
+</div>

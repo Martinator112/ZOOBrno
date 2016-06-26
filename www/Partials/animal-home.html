@@ -1,38 +1,21 @@
-    
+
 <link href="../css/rating.css" rel="stylesheet" />
 
 <ion-view>
         <ion-content>
             <div id="animalHomeScreen">
-                Home screen
+                {{translate("ANIMAL_HOME_SCREEN")}}
             </div>
             <div class="item item-avatar">
                 <img src="css/images/{{animalId}}.jpg">
-                <h2>{{animal.label}}</h2>
+                <h2>{{getAnimalLabel()}}</h2>
                 <p>ZOO Brno</p>
+                <zoo-rating-stars animal-id="animalId" small="true" read-only="true"></zoo-rating-stars>
             </div>
             <div class="item item-body">
                 <img class="full-image" src="css/images/{{animalId}}2.jpg">
             </div>
             <p id="rateme">{{translate("RATE")}}</p>
-            <div class="rating" >
-
-                <input type="radio" name="rating" id="r1">
-                <label for="r1"></label>
-
-                <input type="radio" name="rating" id="r2">
-                <label for="r2"></label>
-
-                <input type="radio" name="rating" id="r3">
-                <label for="r3"></label>
-
-                <input type="radio" name="rating" id="r4">
-                <label for="r4"></label>
-
-                <input type="radio" name="rating" id="r5">
-                <label for="r5"></label>
-
-            </div>
+            <zoo-rating-stars animal-id="animalId" big="true" already-rated="alreadyRated"></zoo-rating-stars>
         </ion-content>
     </ion-view>
-    

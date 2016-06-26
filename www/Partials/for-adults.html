@@ -1,17 +1,18 @@
-<ion-view title="{{animal.label}}">
+<ion-view title="{{getAnimalLabel()}}">
 
 <ion-content>
 <div class="list card">
 
 	<div class="item item-icon-left assertive" href="#">
     	<i class="icon ion-man"></i> <!-- ion-ios-body -->
-    	Pro dospělé
+    	{{translate("FOR_ADULTS")}}
   	</div>
 
 	<div class="item item-avatar">
 		<img src="css/images/{{animalId}}.jpg">
-		<h2>{{animal.label}}</h2>
+		<h2>{{getAnimalLabel()}}</h2>
 		<p>ZOO Brno</p>
+		<zoo-rating-stars animal-id="animalId" small="true" read-only="true"></zoo-rating-stars>
 	</div>
 
 	<div class="item item-body">
@@ -24,4 +25,3 @@
 </ion-content>
 
 </ion-view>
-

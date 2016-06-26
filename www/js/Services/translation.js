@@ -12,12 +12,13 @@
         "CZECH": "Cesky",
         "ENGLISH": "Anglicky",
         "FOR_CHILDREN": "Pro deti",
-        "FOR_ADULTS": "Pro dospele",
+        "FOR_ADULTS": "Pro dospělé",
         "MAP": "Mapa",
         "AUDIO": "Zvuk",
         "ACTIONS_FOR": "Moznosti pro ",
         "RATE" : "Ohodnot me",
-        "HOME": "Domu"
+        "HOME": "Domu",
+        "ANIMAL_HOME_SCREEN": "Zvire - Informace"
       },
       "English": {
         "NEWS": "News",
@@ -31,7 +32,8 @@
         "AUDIO": "Audi",
         "ACTIONS_FOR": "Actions for",
         "RATE": "Rate me",
-        "HOME": "Home"
+        "HOME": "Home",
+        "ANIMAL_HOME_SCREEN": "Animal - About"
       }
     };
 

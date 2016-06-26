@@ -15,6 +15,7 @@
       "forChildren": "unloaded"
     };
     $scope.loading = true;
+    $scope.alreadyRated = false;
 
     (function initialize(){
       alert("animalId is " + animalId);
@@ -27,6 +28,7 @@
     }());
 
     $scope.translate = translate;
+    $scope.getAnimalLabel = getAnimalLabel;
     $scope.getTextForChildren = getTextForChildren;
     $scope.getTextForAdults = getTextForAdults;
 

@@ -22,7 +22,7 @@
     }
 
     function debug() {
-      $location.path("/animal/bobr_kanadsky/" + $scope.lang + "/home");
+      $location.path("/animal/medved_kamcatsky/" + $scope.lang + "/home");
     }
 
     function quit() {
