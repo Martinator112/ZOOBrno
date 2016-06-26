@@ -6,7 +6,8 @@
 (function() {
 angular.module('zoo-app', ['ionic', 'ngCordova'])
 
-.config(function($stateProvider, $urlRouterProvider) {
+.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
+  $ionicConfigProvider.tabs.position('bottom');
   $stateProvider.state('Home', {
     url: '/',
     /*If in a folder, template/welcome.html*/

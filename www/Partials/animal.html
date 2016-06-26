@@ -1,12 +1,12 @@
 <ion-side-menus  ng-controller="AnimalController">
 
+  
   <ion-side-menu-content enable-menu-with-back-views="false">
     <ion-nav-bar>
       <ion-nav-back-button>
       </ion-nav-back-button>
 
       <ion-nav-buttons side="left">
-       <!-- Toggle left side menu -->
        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
       </ion-nav-buttons>
 
@@ -16,7 +16,7 @@
 
   </ion-side-menu-content>
 
-    <!-- Left menu -->
+  <!--
   <ion-side-menu side="left" is-enabled="true">
 
     <ion-header-bar id="animalLeftSideMenu">
@@ -42,8 +42,25 @@
           <i class="icon ion-ios-location"></i>
           {{translate("MAP")}}
         </ion-item>
-      </ion-list>
+      </ion-list>q
     </ion-content>
-  </ion-side-menu>
+  </ion-side-menu> -->
+
+<ion-tabs>
+    <a class="tab-item balanced" ui-sref="Animal.Home">
+      <i class="icon ion-home"></i>
+    </a>
+
+    <a class="tab-item positive" ui-sref="Animal.forChildren">
+        <i class="icon ion-ios-body"></i>
+    </a>
+
+    <a class="tab-item assertive" ui-sref="Animal.forAdults">
+      <i class="icon ion-man"></i>
+    </a>
+    <a class="tab-item royal" ui-sref="Animal.map">
+     <i class="icon ion-ios-location"></i>
+    </a>
+</ion-tabs>
 
 </ion-side-menus>
