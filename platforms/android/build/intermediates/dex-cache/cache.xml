@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/martin/SKOLA/ZOOBrno/platforms/android/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0-beta1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="f81eecb8d5e9e548f75f277830a94a9b37fbb987">
+        <dex dex="/home/martin/SKOLA/ZOOBrno/platforms/android/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.0.0-beta1_fdcc01be360703f1d6588f99b24f701f4f2c3225.jar" />
+    </item>
+    <item
+        jar="/root/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/24.0.0-beta1/support-annotations-24.0.0-beta1.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="04705c19cdec60364bc04e2e928c274da1ba301b">
+        <dex dex="/home/martin/SKOLA/ZOOBrno/platforms/android/build/intermediates/pre-dexed/debug/support-annotations-24.0.0-beta1_20114fcc648d272de7c69a28424b998297d0cfb6.jar" />
+    </item>
+    <item
+        jar="/home/martin/SKOLA/ZOOBrno/platforms/android/build/intermediates/exploded-aar/android/CordovaLib/unspecified/debug/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="763a1cb8f588de8e2ed084d3ca42f24e9fdc78da">
+        <dex dex="/home/martin/SKOLA/ZOOBrno/platforms/android/build/intermediates/pre-dexed/debug/CordovaLib-unspecified-debug_37572f2513432cb4c26bfd2d09953065e03a6ad9.jar" />
+    </item>
+    <item
+        jar="/home/martin/SKOLA/ZOOBrno/platforms/android/build/intermediates/exploded-aar/barcodescanner/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="74969bd25b24524b96eb730c448be8c01916e1e1">
+        <dex dex="/home/martin/SKOLA/ZOOBrno/platforms/android/build/intermediates/pre-dexed/debug/intermediates-exploded-aar-barcodescanner_cde51f9514d688fd4a45a41a885fd70ee8d6544e.jar" />
+    </item>
+    <item
+        jar="/home/martin/SKOLA/ZOOBrno/platforms/android/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0-beta1/jars/libs/internal_impl-24.0.0-beta1.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="23d564c059873f398dc5d967f56791a66472ce76">
+        <dex dex="/home/martin/SKOLA/ZOOBrno/platforms/android/build/intermediates/pre-dexed/debug/internal_impl-24.0.0-beta1_0eb17293d05177d77b6af4a7de58dc9c56a4f96a.jar" />
+    </item>
+
+</items>

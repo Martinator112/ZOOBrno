@@ -1,0 +1,31 @@
+<ion-pane>
+  <ion-header-bar align-title="center" class="bar-stable" id="homeHeader">
+    <h1 class="title">ZOO Brno</h1>
+  </ion-header-bar>
+  <ion-content id="contentWrapper" class="has-footer">
+    <div class="list card">
+      <button ng-click="loadAnimal()" class="button button-dark button-full icon-left ion-play">
+        {{translate("READ_QR")}}
+      </button>
+      <button ng-click="debug()" class="button button-dark button-full icon-left ion-play">
+        TESTING PURPOSES
+      </button>
+      <button ng-click="loadNews()" class="button button-dark button-full icon-left ion-social-rss">
+        {{translate("NEWS")}}
+      </button>
+      <button ng-click="quit()" class="button button-dark button-full icon-left ion-android-exit">
+        {{translate("QUIT")}}
+      </button>
+    </div>
+  </ion-content>
+
+    <ion-footer-bar align-title="left" class="bar-assertive" id="homeFooter">
+    <div class="buttons">
+      <button class="button" ng-click="lang = 'Czech'">{{translate("CZECH")}}</button>
+    </div>
+    <h1 align-title="center" class="title"></h1>
+    <div class="buttons" ng-click="lang = 'English'">
+      <button class="button">{{translate("ENGLISH")}}</button>
+    </div>
+  </ion-footer-bar>
+</ion-pane>

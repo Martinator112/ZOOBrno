@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/martin/SKOLA/ZOOBrno/platforms/android/build/intermediates/res/merged/debug/drawable/share_via_barcode.png",
+        "source": "/home/martin/SKOLA/ZOOBrno/platforms/android/build/intermediates/exploded-aar/barcodescanner/res/drawable/share_via_barcode.png"
+    },
+    {
+        "merged": "/home/martin/SKOLA/ZOOBrno/platforms/android/build/intermediates/res/merged/debug/drawable/launcher_icon.png",
+        "source": "/home/martin/SKOLA/ZOOBrno/platforms/android/build/intermediates/exploded-aar/barcodescanner/res/drawable/launcher_icon.png"
+    },
+    {
+        "merged": "/home/martin/SKOLA/ZOOBrno/platforms/android/build/intermediates/res/merged/debug/drawable/flip_camera.png",
+        "source": "/home/martin/SKOLA/ZOOBrno/platforms/android/build/intermediates/exploded-aar/barcodescanner/res/drawable/flip_camera.png"
+    }
+]
