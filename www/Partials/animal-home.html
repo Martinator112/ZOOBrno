@@ -2,7 +2,8 @@
 <link href="../css/rating.css" rel="stylesheet" />
 
 <ion-view>
-        <ion-content>
+        <ion-content ng-hide="loading">
+
             <div id="animalHomeScreen">
                 {{translate("ANIMAL_HOME_SCREEN")}}
             </div>
@@ -17,5 +18,11 @@
             </div>
             <p id="rateme">{{translate("RATE")}}</p>
             <zoo-rating-stars animal-id="animalId" big="true" already-rated="alreadyRated"></zoo-rating-stars>
+        </ion-content>
+
+        <ion-content ng-show="loading">
+          <p>
+            <ion-spinner icon="spiral" class="spinner"></ion-spinner>
+          </p>
         </ion-content>
     </ion-view>

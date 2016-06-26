@@ -6,114 +6,28 @@
 .rating > * {
   float: left;
 }
-@-webkit-keyframes pulse {
-  50% {
-    color: #5e5e5e;
-    text-shadow: 0 0 15px #777777;
-  }
-}
-@keyframes pulse {
-  50% {
-    color: #5e5e5e;
-    text-shadow: 0 0 15px #777777;
-  }
-}
-.rating label.big {
-  height: 30px;
-  width: 20%;
-  display: block;
-  position: relative;
-  cursor: pointer;
+
+.big {
+  font-size: 60px;
 }
 
-.rating label.small {
-  height: 30px;
-  width: 5%;
-  display: block;
-  position: relative;
-  cursor: pointer;
-}
-.rating label:nth-of-type(5):after {
-  -webkit-animation-delay: 0.25s;
-          animation-delay: 0.25s;
-}
-.rating label:nth-of-type(4):after {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-}
-.rating label:nth-of-type(3):after {
-  -webkit-animation-delay: 0.15s;
-          animation-delay: 0.15s;
-}
-.rating label:nth-of-type(2):after {
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
-}
-.rating label:nth-of-type(1):after {
-  -webkit-animation-delay: 0.05s;
-          animation-delay: 0.05s;
-}
-.rating label.big:after {
-  -webkit-transition: all 0.4s ease-out;
-  transition: all 0.4s ease-out;
-  -webkit-font-smoothing: antialiased;
-  position: absolute;
-  content: "☆";
-  color: #444;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  font-size: 80px;
-  -webkit-animation: 1s pulse ease;
-          animation: 1s pulse ease;
+.small {
+  font-size: 10px;
 }
 
-.rating label.small:after {
-  -webkit-transition: all 0.4s ease-out;
-  transition: all 0.4s ease-out;
-  -webkit-font-smoothing: antialiased;
-  position: absolute;
-  content: "☆";
-  color: #444;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  font-size: 20px;
-  -webkit-animation: 1s pulse ease;
-          animation: 1s pulse ease;
-}
-
-.rating label:hover:after {
+.small:hover, .big:hover {
   color: #5e5e5e;
   text-shadow: 0 0 15px #5e5e5e;
 }
-.rating input {
-  display: none;
-}
 
-.rating label.small.active:after {
-  content: "★";
+.rating .active {
   color: #F9BF3B;
-  text-shadow: 0 0 20px #F9BF3B;
-}
-
-.rating label.big.active:after {
-  content: "★";
-  color: #F9BF3B;
-  text-shadow: 0 0 20px #F9BF3B;
-}
-
-body {
-  background-color: #222 important!;
 }
 
 #rateme {
-    font-family: cursive;
-    font-size: 30px;
-    color: #222222;
-    text-align: center;
+  font-family: cursive;
+  font-size: 30px;
+  color: #222222;
+  margin-top: 15px;
+  text-align: center;
 }

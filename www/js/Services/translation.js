@@ -16,9 +16,10 @@
         "MAP": "Mapa",
         "AUDIO": "Zvuk",
         "ACTIONS_FOR": "Moznosti pro ",
-        "RATE" : "Ohodnot me",
+        "RATE" : "Jak se ti libim?",
         "HOME": "Domu",
-        "ANIMAL_HOME_SCREEN": "Zvire - Informace"
+        "ANIMAL_HOME_SCREEN": "Zvire - Informace",
+        "INFORMATION": "Informace"
       },
       "English": {
         "NEWS": "News",
@@ -31,9 +32,10 @@
         "MAP": "Map",
         "AUDIO": "Audi",
         "ACTIONS_FOR": "Actions for",
-        "RATE": "Rate me",
+        "RATE": "How do you like me?",
         "HOME": "Home",
-        "ANIMAL_HOME_SCREEN": "Animal - About"
+        "ANIMAL_HOME_SCREEN": "Animal - About",
+        "INFORMATION": "About"
       }
     };
 

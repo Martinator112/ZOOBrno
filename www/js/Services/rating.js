@@ -9,9 +9,6 @@
     ratingFactory.rateAnimal = rateAnimal;
     ratingFactory.getAnimalRating = getAnimalRating;
 
-
-
-
     function rateAnimal(animalId, rating) {
       var deferred = $q.defer();
 
@@ -29,10 +26,8 @@
       var deferred = $q.defer();
 
       var url = "https://golang-martinator.rhcloud.com/rating/" + animalId;
-      alert("Get: " + url);
       $http({method: "GET", url:url})
       .then(function(result){
-        console.log(result);
         deferred.resolve(result.data);
       }, function(rejectReason){
         console.log(rejectReason);

@@ -19,6 +19,9 @@
       link: function($scope, $element, $attrs) {
         console.log($scope);
 
+        $scope.animalRating = -1;
+        $scope.starsArray = [1,2,3,4,5];
+
         $scope.getAnimalRating = function() {
           ratingFactory.getAnimalRating($scope.animalId).then(function(rating) {
             $scope.animalRating = rating.RatingSum / rating.RatingCount / 1;

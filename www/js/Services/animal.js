@@ -12,7 +12,6 @@
     function fetchAnimalById(id) {
       var deferred = $q.defer();
       var animalUrl = url + "data/animal-texts/" + id +".json";
-      alert("Getting animalUrl: '" + animalUrl + "'");
       $http.get(animalUrl).then(function(animalData){
         deferred.resolve(animalData.data);
       }, function(failed){

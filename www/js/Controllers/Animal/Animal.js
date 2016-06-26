@@ -5,7 +5,7 @@
 
 
   function($scope, $stateParams, animalFactory, translationService) {
-
+    console.log($state);
     var animalId = $scope.animalId = $stateParams.animalId;
     $scope.lang = $stateParams.lang;
     $scope.animal = {
@@ -16,9 +16,9 @@
     };
     $scope.loading = true;
     $scope.alreadyRated = false;
+    $scope.activeState = "information";
 
     (function initialize(){
-      alert("animalId is " + animalId);
       animalFactory.fetchAnimalById(animalId).then(function(animal) {
         $scope.animal = animal;
         $scope.loading = false;

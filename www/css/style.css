@@ -10,6 +10,15 @@ a {
   background-color: #00002F;
 }
 
+
+#sideMenuList .clickable a {
+  background-color: #DDD;
+}
+
+#sideMenuList .clickable.active a {
+  background-color: #9DC6E3;
+}
+
 #contentWrapper {
   width: 100%;
   height: 100%;
@@ -91,4 +100,24 @@ a {
   position: relative;
   display: block;
   padding: 0px !important;
+}
+
+.spinner svg {
+  margin-left: 35%;
+  margin-top: 40%;
+  height: 150px;
+  width: 150px;
+}
+
+
+#sideMenuList {
+  background-color: #EBEBEB;
+  color: white;
+}
+
+#animalLeftSideMenuHeader {
+  background-color: #DDD;
+  border-color: #EBEBEB;
+  border-width: 2px;
+  border-style: solid;
 }

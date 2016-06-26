@@ -12,33 +12,49 @@
 
     </ion-nav-bar>
 
-    <ion-nav-view name="menuContent"></ion-nav-view>
+    <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
 
   </ion-side-menu-content>
 
     <!-- Left menu -->
   <ion-side-menu side="left" is-enabled="true">
 
-    <ion-header-bar id="animalLeftSideMenu">
-      {{translate("ACTIONS_FOR")}} {{animal.label}}
+    <ion-header-bar id="animalLeftSideMenuHeader">
+      {{translate("ACTIONS_FOR")}} {{getAnimalLabel()}}
     </ion-header-bar>
 
-    <ion-content has-header="true">
+    <ion-content id="sideMenuList" has-header="true">
       <ion-list>
-        <ion-item class="clickable" ui-sref="Animal.Home" menu-close>
+        <ion-item class="clickable" ui-sref="Home" menu-close>
             <i class="icon ion-home">
-                    {{translate("HOME")}}
+              {{translate("HOME")}}
             </i>
         </ion-item>
-        <ion-item class="clickable" ui-sref="Animal.forChildren" menu-close>
+        <ion-item class="clickable" ui-sref="Animal.Home"
+          ui-sref-active="active"
+          menu-close>
+            <i class="icon ion-information">
+              {{translate("INFORMATION")}}
+            </i>
+        </ion-item>
+        <ion-item class="clickable"
+        ui-sref="Animal.forChildren"
+        ui-sref-active="active"
+          menu-close>
           <i class="icon ion-ios-body"></i>
           {{translate("FOR_CHILDREN")}}
         </ion-item>
-        <ion-item class="clickable" ui-sref="Animal.forAdults" menu-close>
+        <ion-item class="clickable"
+        ui-sref="Animal.forAdults"
+        ui-sref-active="active"
+         menu-close>
           <i class="icon ion-man"></i>
           {{translate("FOR_ADULTS")}}
         </ion-item>
-        <ion-item class="clickable" ui-sref="Animal.map" menu-close>
+        <ion-item class="clickable"
+        ui-sref="Animal.map"
+        ui-sref-active="active"
+        menu-close>
           <i class="icon ion-ios-location"></i>
           {{translate("MAP")}}
         </ion-item>
