@@ -19,13 +19,14 @@
     </div>
   </ion-content>
 
-    <ion-footer-bar align-title="left" class="bar-assertive" id="homeFooter">
-    <div class="buttons">
-      <button class="button" ng-click="lang = 'Czech'">{{translate("CZECH")}}</button>
-    </div>
-    <h1 align-title="center" class="title"></h1>
-    <div class="buttons" ng-click="lang = 'English'">
-      <button class="button">{{translate("ENGLISH")}}</button>
-    </div>
+  <ion-footer-bar align-title="left" class="bar-assertive" id="homeFooter">
+  <div class="langButtons">
+    <button class="langBtn" ng-click="lang = 'Czech'">
+      <img src="img/cz.svg" />
+    </button>
+  </div>
+  <div class="langButtons" ng-click="lang = 'English'">
+    <button class="langBtn"><img src="img/gb.svg" /></button>
+  </div>
   </ion-footer-bar>
 </ion-pane>

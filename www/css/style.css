@@ -71,3 +71,24 @@ a {
 #paragraphForChildren {
 	white-space: pre-line;
 }
+
+.langBtn {
+  padding: 0px !important;
+  background-color: inherit;
+  border-style: none;
+}
+
+.langBtn img {
+  display: block;
+  width: 80%;
+  height: 100%;
+  position: relative;
+}
+
+.langButtons {
+  background-color: inherit;
+  width: 15%;
+  position: relative;
+  display: block;
+  padding: 0px !important;
+}
