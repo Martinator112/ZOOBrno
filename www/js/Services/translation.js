@@ -16,6 +16,7 @@
         "MAP": "Mapa",
         "AUDIO": "Zvuk",
         "ACTIONS_FOR": "Moznosti pro ",
+        "RATE" : "Ohodnot me",
         "HOME": "Domu"
       },
       "English": {
@@ -29,6 +30,7 @@
         "MAP": "Map",
         "AUDIO": "Audi",
         "ACTIONS_FOR": "Actions for",
+        "RATE": "Rate me",
         "HOME": "Home"
       }
     };

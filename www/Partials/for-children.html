@@ -1,11 +1,26 @@
 <ion-view title="{{animal.label}}">
 
-  <ion-content>
-    <div class="card padding">
-    <p class="animal-text" id="paragraphForChildren">
-      {{getTextForChildren()}}
-    </p>
-    </div>
-  </ion-content>
+<ion-content>
+<div class="list card">
+
+	<div class="item item-icon-left positive" href="#">
+    	<i class="icon ion-ios-body"></i> 
+    	Pro deti
+  	</div>
+
+	<div class="item item-avatar">
+		<img src="css/images/{{animalId}}.jpg">
+		<h2>{{animal.label}}</h2>
+		<p>ZOO Brno</p>
+	</div>
+
+	<div class="item item-body">
+		<img class="full-image" src="css/images/{{animalId}}0.jpg">
+		<p>{{getTextForChildren()}}</p>
+		<img class="full-image" src="css/images/{{animalId}}2.jpg">
+		<img class="full-image" src="css/images/{{animalId}}3.jpg">
+	</div>
+</div>
+</ion-content>
 
 </ion-view>

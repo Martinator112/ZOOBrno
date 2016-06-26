@@ -1,11 +1,27 @@
 <ion-view title="{{animal.label}}">
 
-  <ion-content>
-    <div class="card padding">
-      <p class="animal-text" id="paragraphForAdults">
-        {{getTextForAdults()}}
-      </p>
-    </div>
-  </ion-content>
+<ion-content>
+<div class="list card">
+
+	<div class="item item-icon-left assertive" href="#">
+    	<i class="icon ion-man"></i> <!-- ion-ios-body -->
+    	Pro dospělé
+  	</div>
+
+	<div class="item item-avatar">
+		<img src="css/images/{{animalId}}.jpg">
+		<h2>{{animal.label}}</h2>
+		<p>ZOO Brno</p>
+	</div>
+
+	<div class="item item-body">
+		<img class="full-image" src="css/images/{{animalId}}1.jpg">
+		<p>{{getTextForAdults()}}</p>
+		<img class="full-image" src="css/images/{{animalId}}2.jpg">
+		<img class="full-image" src="css/images/{{animalId}}3.jpg">
+	</div>
+</div>
+</ion-content>
 
 </ion-view>
+

@@ -37,9 +37,11 @@ angular.module('zoo-app', ['ionic', 'ngCordova'])
 
   .state('Animal.forChildren', {
     url: '/for-children',
+    /*url: '/fchildren',*/
     views: {
       "menuContent": {
         templateUrl: 'Partials/for-children.html',
+        /*templateUrl: 'Partials/fchildren.html',*/
       }
     }
   })

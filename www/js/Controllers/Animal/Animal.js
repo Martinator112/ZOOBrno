@@ -30,11 +30,19 @@
     $scope.getTextForChildren = getTextForChildren;
     $scope.getTextForAdults = getTextForAdults;
 
+    function getAnimalLabel() {
+      if ($scope.animal.multiLanguage == "true") {
+        return $scope.animal["label" + $scope.lang];
+      } else {
+        return $scope.animal["label" + $scope.animal.lang];
+      }
+    }
+
     function getTextForAdults() {
       if ($scope.animal.multiLanguage == "true") {
         return $scope.animal["forAdults" + $scope.lang];
       } else {
-        return $scope.animal.forAdults;
+        return $scope.animal.forAdults["forAdults" + $scope.animal.lang];
       }
     }
 
@@ -42,7 +50,7 @@
       if ($scope.animal.multiLanguage == "true") {
         return $scope.animal["forChildren" + $scope.lang];
       } else {
-        return $scope.animal.forChildren;
+        return $scope.animal["forChildren" + $scope.animal.lang];
       }
     }
 

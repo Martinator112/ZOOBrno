@@ -16,7 +16,7 @@
 
   </ion-side-menu-content>
 
-  <!-- Left menu -->
+    <!-- Left menu -->
   <ion-side-menu side="left" is-enabled="true">
 
     <ion-header-bar id="animalLeftSideMenu">
@@ -26,8 +26,9 @@
     <ion-content has-header="true">
       <ion-list>
         <ion-item class="clickable" ui-sref="Animal.Home" menu-close>
-          <i class="icon ion-ios-body"></i>
-          {{translate("HOME")}}
+            <i class="icon ion-home">
+                    {{translate("HOME")}}
+            </i>
         </ion-item>
         <ion-item class="clickable" ui-sref="Animal.forChildren" menu-close>
           <i class="icon ion-ios-body"></i>
@@ -38,7 +39,7 @@
           {{translate("FOR_ADULTS")}}
         </ion-item>
         <ion-item class="clickable" ui-sref="Animal.map" menu-close>
-          <i class="icon ion-man"></i>
+          <i class="icon ion-ios-location"></i>
           {{translate("MAP")}}
         </ion-item>
       </ion-list>
