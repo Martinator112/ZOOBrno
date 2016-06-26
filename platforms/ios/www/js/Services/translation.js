@@ -16,7 +16,7 @@
         "MAP": "Mapa",
         "AUDIO": "Zvuk",
         "ACTIONS_FOR": "Moznosti pro ",
-        "RATE" : "Ohodnot me",
+          "RATE" : "Ohodnot me",
         "HOME": "Domu"
       },
       "English": {
