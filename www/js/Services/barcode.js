@@ -5,17 +5,11 @@
 
   function($cordovaBarcodeScanner, $q) {
     var barcodeFactory = {};
-    var cachedId = null;
 
     function scan() {
       var deferred = $q.defer();
 
-      if (cachedId) {
-        deferred.resolve(cachedId);
-      }
-
       $cordovaBarcodeScanner.scan().then(function(scannedData) {
-        cachedId = scannedData.text;
         deferred.resolve(scannedData.text);
       }, function(error) {
         deferred.reject(error);

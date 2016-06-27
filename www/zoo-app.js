@@ -30,7 +30,7 @@ angular.module('zoo-app', ['ionic', 'ngCordova'])
     url: '/home',
     views: {
       "menuContent": {
-        templateUrl: 'Partials/animal-home.html',
+        templateUrl: 'Partials/animal-home.html'
       }
     }
   })

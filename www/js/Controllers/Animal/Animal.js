@@ -1,10 +1,10 @@
 (function() {
 
   angular.module("zoo-app").controller("AnimalController",
-    ["$scope", "$stateParams", "animalFactory", "translationService", "$state",
+    ["$scope", "$stateParams", "animalFactory", "translationService", "$state", "$ionicHistory",
 
 
-  function($scope, $stateParams, animalFactory, translationService, $state) {
+  function($scope, $stateParams, animalFactory, translationService, $state, $ionicHistory) {
     var animalId = $scope.animalId = $stateParams.animalId;
     $scope.lang = $stateParams.lang;
     $scope.animal = {
@@ -15,15 +15,17 @@
     };
     $scope.loading = true;
     $scope.alreadyRated = false;
-    $scope.activeState = "information";
 
     (function initialize(){
-      animalFactory.fetchAnimalById(animalId).then(function(animal) {
-        $scope.animal = animal;
-        $scope.loading = false;
-      }, function(failed) {
-        $state.go("Home");
+      $ionicHistory.clearCache().then(function() {
+        animalFactory.fetchAnimalById(animalId).then(function(animal) {
+          $scope.animal = animal;
+          $scope.loading = false;
+        }, function(failed) {
+          $state.go("Home");
+        });
       });
+
     }());
 
     $scope.translate = translate;
@@ -43,7 +45,7 @@
       if ($scope.animal.multiLanguage == "true") {
         return $scope.animal["forAdults" + $scope.lang];
       } else {
-        return $scope.animal.forAdults["forAdults" + $scope.animal.lang];
+        return $scope.animal["forAdults" + $scope.animal.lang];
       }
     }
 
