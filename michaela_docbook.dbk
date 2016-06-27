@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN"
+                      "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd">
+                      
+<book>
+    
+    <title>Documentation for ZOO application</title>
+    
+    <chapter>
+        <title>Modification of texts</title>
+        <para>We getted some texts about animals in word documents. I modificated them to json form.</para>
+    </chapter>
+    
+    <chapter>
+        <title>Testing of application</title>
+        <para>During development and also after completing of application I tested application and looked for mistakes, imperfections and needed improvements.</para>
+    </chapter>
+    
+    <chapter>
+        <title>Design of application</title>
+        <para>I participated on total design of the application.</para>
+    </chapter>
+    
+</book>            
