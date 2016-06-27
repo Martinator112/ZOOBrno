@@ -1,11 +1,10 @@
 (function() {
 
   angular.module("zoo-app").controller("AnimalController",
-    ["$scope", "$stateParams", "animalFactory", "translationService",
+    ["$scope", "$stateParams", "animalFactory", "translationService", "$state",
 
 
-  function($scope, $stateParams, animalFactory, translationService) {
-    console.log($state);
+  function($scope, $stateParams, animalFactory, translationService, $state) {
     var animalId = $scope.animalId = $stateParams.animalId;
     $scope.lang = $stateParams.lang;
     $scope.animal = {
@@ -23,7 +22,7 @@
         $scope.animal = animal;
         $scope.loading = false;
       }, function(failed) {
-        alert(failed);
+        $state.go("Home");
       });
     }());
 

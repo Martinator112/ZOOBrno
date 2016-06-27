@@ -121,3 +121,7 @@ a {
   border-width: 2px;
   border-style: solid;
 }
+
+#animalHomeAvatarLabel {
+  color: green;
+}
