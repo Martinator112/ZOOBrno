@@ -9,7 +9,7 @@
     var mapOpts = {};
 
     function initialize() {
-      latLng = new google.maps.LatLng(49.2,16.5);
+      latLng = new google.maps.LatLng(49.2300294,16.5334932);
 
       mapOpts = {
         center: latLng,
