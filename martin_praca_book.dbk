@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE bookarticlearticlearticlearticle PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+
+<book>
+  <title>Documentation for work spent on ZOO Brno application</title>
+  <chapter>
+    <title>Mobile app</title>
+    <section>
+      <title>Angular</title>
+      <para>I was involved in setting up angular environment for our project. I invented structure of project and created application routing. I have created promises for loading animal views through reading QR code and also promises for interaction with our web server.</para>
+      <para>I also enforced best practises for writing all our controllers/directives/services. That means that we are using IIFE(immediately invoked function expressions) and that every controller/directive/filter is in separate file. No more than one controller/directive/filter per file !
+	</para>
+    </section>
+    <section>
+      <title>Gulp</title>
+      <para>I have installed gulp in order to have option to easily compile all javascript files into one file. That is standard between javascript aplications and increases developer efficiency due to automation of tasks.</para>
+    </section>
+  </chapter>
+
+  <chapter>
+    <title>Web Server</title>
+    <section>
+      <title>Golang</title>
+      <para>I created simple web server which supports cross domain requests which are required by our mobile app to rate animals. Web server is written in golang and runs on openshift platform. It is easily maintanable and scalable written server so that means that adding additional functionality(e.g. comments) would be easy and fast.</para>
+    </section>
+    <section>
+      <title>MongoDB</title>
+      <para>For our database we chose NO-SQL based MongoDB. I created cartridge on openshift platform and integrated with our golang web server.</para>
+    </section>
+  </chapter>
+</book> 
