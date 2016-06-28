@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE bookarticlearticlearticlearticle PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+
+<book>
+  <title>Documentation for work spent on ZOO Brno application</title>
+  <chapter>
+    <title>Mobile app</title>
+    <section>
+      <title>Rating</title>
+      <para> I created design for rating animals. 
+	</para>
+    </section>
+    <section>
+      <title>Home page design</title>
+      <para>I contributed to the design of the animal's home page.</para>
+    </section>
+    <section>
+      <title>Translation</title>
+      <para>I helped creating translations - english and czech versions of the application.</para>
+    </section>
+    <section>
+      <title>Testing</title>
+      <para>I tested the application throughout developement and looked for improvements.</para>
+    </section>
+  </chapter>
+
+  
+</book> 
